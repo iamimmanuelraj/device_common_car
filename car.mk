@@ -8,6 +8,11 @@ PRODUCT_PACKAGES += \
     android.hardware.automotive.vehicle@2.0-service \
     android.hardware.automotive.audiocontrol@1.0-service
 
+# Multi-user properties
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES := \
+    android.car.number_pre_created_users=1 \
+    android.car.number_pre_created_guests=1
+
 # Landscape Mode
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.screen.landscape.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.screen.landscape.xml
