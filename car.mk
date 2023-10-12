@@ -24,3 +24,6 @@ PRODUCT_COPY_FILES += \
 # Secondary Display
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.activities_on_secondary_displays.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.activities_on_secondary_displays.xml
+
+# Sepolicy
+BOARD_SEPOLICY_DIRS += device/generic/car/common/sepolicy
