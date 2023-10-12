@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Horizontal by default -->
+    <integer name="def_user_rotation">1</integer>
+</resources>
