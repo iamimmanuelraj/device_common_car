@@ -18,8 +18,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.screen.landscape.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.screen.landscape.xml
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
+PRODUCT_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
