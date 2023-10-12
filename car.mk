@@ -7,3 +7,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.automotive.vehicle@2.0-service \
     android.hardware.automotive.audiocontrol@1.0-service
+
+# Landscape Mode
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.screen.landscape.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.screen.landscape.xml
