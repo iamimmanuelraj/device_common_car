@@ -18,6 +18,11 @@ PRODUCT_PACKAGES += \
     android.hardware.automotive.audiocontrol@1.0-service
 endif
 
+ifneq (true,$(call math_gt_or_eq,$(PLATFORM_SDK_VERSION),29))
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-service.sim
+endif
+
 PRODUCT_PACKAGES += \
     android.hardware.automotive.vehicle@2.0-service \
 	android.hardware.broadcastradio@2.0-service
