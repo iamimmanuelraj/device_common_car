@@ -23,6 +23,18 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service.sim
 endif
 
+ifeq (true,$(call math_gt,$(PLATFORM_SDK_VERSION),29))
+    ifeq (true,$(call math_gt,$(PLATFORM_SDK_VERSION),33))
+    PRODUCT_PACKAGES += \
+        android.hardware.automotive.evs
+    endif
+    PRODUCT_PACKAGES += \
+        android.hardware.automotive.evs@1.1-service
+else
+PRODUCT_PACKAGES += \
+    android.hardware.automotive.evs@1.0-service
+endif
+
 PRODUCT_PACKAGES += \
     android.hardware.automotive.vehicle@2.0-service \
 	android.hardware.broadcastradio@2.0-service
