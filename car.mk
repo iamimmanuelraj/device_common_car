@@ -17,8 +17,10 @@ else
 PRODUCT_PACKAGES += \
     android.hardware.automotive.audiocontrol@1.0-service
 endif
+
 PRODUCT_PACKAGES += \
-    android.hardware.automotive.vehicle@2.0-service
+    android.hardware.automotive.vehicle@2.0-service \
+	android.hardware.broadcastradio@2.0-service
 
 # Multi-user properties
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES := \
