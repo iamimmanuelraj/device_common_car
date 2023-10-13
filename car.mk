@@ -68,7 +68,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.broadcastradio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.broadcastradio.xml
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/common/cofigs/car_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/car_core_hardware.xml
+    $(LOCAL_PATH)/common/configs/car_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/car_core_hardware.xml
 
 # Product makefiles
 $(call inherit-product, packages/services/Car/car_product/build/car.mk)
