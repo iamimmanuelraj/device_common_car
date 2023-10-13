@@ -4,9 +4,17 @@ PRODUCT_COPY_FILES += \
     packages/services/Car/car_product/init/init.car.rc:root/init.car.rc
 
 # Hidl
+ifeq (true,$(call math_gt,$(PLATFORM_SDK_VERSION),29))
 PRODUCT_PACKAGES += \
-    android.hardware.automotive.vehicle@2.0-service \
+    android.hardware.automotive.audiocontrol@2.0-service \
+    android.frameworks.automotive.display@1.0-service \
+    Vehicle
+else
+PRODUCT_PACKAGES += \
     android.hardware.automotive.audiocontrol@1.0-service
+endif
+PRODUCT_PACKAGES += \
+    android.hardware.automotive.vehicle@2.0-service
 
 # Multi-user properties
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES := \
