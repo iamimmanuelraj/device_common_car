@@ -46,3 +46,9 @@ PRODUCT_COPY_FILES += \
 
 # Sepolicy
 BOARD_SEPOLICY_DIRS += device/generic/car/common/sepolicy
+
+# Whitelisted Packages
+ifeq (true,$(call math_gt,$(PLATFORM_SDK_VERSION),29))
+PRODUCT_COPY_FILES += \
+    device/generic/car/common/preinstalled-packages-product-car-emulator.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-car-emulator.xml
+endif
