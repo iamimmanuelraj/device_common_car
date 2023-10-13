@@ -41,6 +41,9 @@ endif
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.screen.landscape.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.screen.landscape.xml
 
+# Manifest
+DEVICE_FRAMEWORK_MANIFEST_FILE += $(LOCAL_PATH)/common/manifests/manifest.xml
+
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 
