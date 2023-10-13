@@ -1,3 +1,7 @@
+# Car Configs
+PRODUCT_COPY_FILES += \
+    device/generic/car/common/config.ini:config.ini
+
 # Car init.rc
 PRODUCT_COPY_FILES += \
     packages/services/Car/car_product/init/init.bootstat.rc:root/init.bootstat.rc \
