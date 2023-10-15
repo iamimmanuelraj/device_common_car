@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Horizontal by default -->
+    <!-- Landscape by default -->
+    <bool name="def_accelerometer_rotation">false</bool>
     <integer name="def_user_rotation">1</integer>
 
     <!-- Don't run the set-up wizard -->
