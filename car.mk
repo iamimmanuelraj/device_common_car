@@ -70,6 +70,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/configs/car_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/car_core_hardware.xml
 
+# Product Charatristics
+PRODUCT_CHARACTERISTICS := automotive
+
 # Product makefiles
 $(call inherit-product, packages/services/Car/car_product/build/car.mk)
 
