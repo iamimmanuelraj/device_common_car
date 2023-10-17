@@ -57,7 +57,10 @@ PRODUCT_COPY_FILES += \
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(LOCAL_PATH)/common/manifests/manifest.xml
 
 # Overlays
-PRODUCT_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
+PRODUCT_PACKAGES += \
+    CarServiceOverlayCommonCar \
+    FrameworksOverlayCommonCar \
+    SettingsProviderOverlayCommonCar
 
 # Permissions
 PRODUCT_COPY_FILES += \
